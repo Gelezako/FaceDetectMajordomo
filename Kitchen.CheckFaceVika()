@@ -1,0 +1,23 @@
+	$Euclid_Vika=gg("Kitchen.Euclid_Vika");
+ 	if((float)$Euclid_Vika<=0.6){
+     say("Привет Вика",2);sleep(1);
+                                  
+ 	 //доброе устро
+ 	 $h=(int)date('G',time());
+ 	 if((int)gg("Kitchen.Morning_Vika")==0 and $h<=11) 
+ 	 if((int)gg("Kitchen.Morning_Alex")==0 and $h<=11) 
+     {
+           say("Доброе утро",2);
+           sleep(1);
+           callMethod('Kitchen.Morning');
+ 	 	   sg("Kitchen.Morning_Vika",1);
+      }
+      
+ 
+     sg("Kitchen.Euclid_Vika",1);
+ 	 sg("Kitchen.HCSR501",0);
+
+     }
+
+
+
