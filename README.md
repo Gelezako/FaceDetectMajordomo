@@ -6,3 +6,4 @@
 2. Создать папку facedetect в C:\_majordomo\apps\ и положить туда содержимое проекта.
 3. Подменить файлы standard_Alex.jpg на свои и разархивировать архивы.
 4. В Majordomo создать свойства Euclid_Vika и Euclid_Alex для хранения значение от нейронной сети. Создать методы CheckFaceAlex и CheckFaceVika. В настройках этих свойст указать что запускать соотвествующий метод при изменении. Создать метод Morning.
+5. Подключить Arduino+Ethernet+HC-SR501 датчик для опредления движения. https://github.com/Gelezako/MQ2-MQ135-DHT22-HC-SR501-MQTT-Ethernet-Majordomo/blob/master/HC-SR501-Ethernet-Majordomo.ino
