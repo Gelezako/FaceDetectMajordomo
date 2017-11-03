@@ -1,0 +1,14 @@
+$users = "";
+$objects=getObjectsByClass("Users");
+
+foreach($objects as $obj) {
+ $EuclidValue = getGlobal($obj['TITLE'].".EuclidValue");  // Евклидово значение
+ $fullname = getGlobal($obj['TITLE'].".fullName");        // имя пользователя
+ $Morning = getGlobal($obj['TITLE'].".Morning");          // добавить свойство для счётчика доброе утро
+     if ($EuclidValue<=0.6 and $EuclidValue!="" and $Morning==0){ 
+		say("Доброе утро ".$fullname,2);
+		sleep(1);
+		runscript("GoodMorning");
+		sg($Morning,1);
+	}
+}
