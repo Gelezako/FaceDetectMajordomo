@@ -1,3 +1,0 @@
-if(gg("Kitchen.HCSR501")=='1'){
-     exec('C:\_majordomo\apps\facedetect\checkface.bat');
-}
