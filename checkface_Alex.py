@@ -28,7 +28,6 @@ sp = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
 facerec = dlib.face_recognition_model_v1('dlib_face_recognition_resnet_model_v1.dat')
 detector = dlib.get_frontal_face_detector()
 
-
 # Загружаем первую фотографию
 
 # In[124]:
@@ -109,9 +108,4 @@ face_descriptor2 = facerec.compute_face_descriptor(img, shape)
 a = distance.euclidean(face_descriptor1, face_descriptor2)
 #print(a)
 a=round(a, 2)
-urllib.request.urlopen('http://127.0.0.1/objects/?object=Kitchen&op=set&p=Euclid_Alex&v=%s' % a)
-
-
-
-
-
+urllib.request.urlopen('http://127.0.0.1/objects/?object=admin&op=set&p=EuclidValue&v=%s' % a)
