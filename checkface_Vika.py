@@ -81,7 +81,7 @@ face_descriptor1 = facerec.compute_face_descriptor(img, shape)
 
 # In[130]:
 
-img = io.imread('C:\\_majordomo\\apps\\facedetect\\checkface.jpg')
+img = io.imread('checkface.jpg')
 win2 = dlib.image_window()
 win2.clear_overlay()
 win2.set_image(img)
@@ -110,8 +110,4 @@ face_descriptor2 = facerec.compute_face_descriptor(img, shape)
 a = distance.euclidean(face_descriptor1, face_descriptor2)
 #print(a)
 a=round(a, 2)
-urllib.request.urlopen('http://127.0.0.1/objects/?object=Kitchen&op=set&p=Euclid_Vika&v=%s' % a)
-
-
-
-
+urllib.request.urlopen('http://127.0.0.1/objects/?object=Vika&op=set&p=EuclidValue&v=%s' % a)
