@@ -1,8 +1,7 @@
+//сценарий для срабатывания по дптчику движения с камеры возле компьютера
 if(timeBetween('09:00', '11:00')){
    say("движение возле компа");
-   sleep(4);
    cm("Camera01.takeSnapshot");
-   sleep(3);
    $img = "C:/_majordomo/htdocs/cms/images/" .gg('Camera01.snapshot'); //получаем путь к скриншоту
    rename($img, "C:/_majordomo/apps/facedetect/checkface.jpg");        //переносим в папку нейронной сети
    exec('C:\_majordomo\apps\facedetect\checkface.bat');                //запуск нейронной сети
