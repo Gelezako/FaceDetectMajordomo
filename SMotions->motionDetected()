@@ -1,4 +1,9 @@
-//сценарий для срабатывания по дптчику движения с камеры возле компьютера
+/**
+* @author Alex Sokolov <admin@gelezako.com>
+* @copyright http://blog.gelezako.com (c)
+*/
+
+//сценарий для срабатывания по датчику движения с камеры возле компьютера
 if(timeBetween('09:00', '11:00')){
    say("движение возле компа");
    cm("Camera01.takeSnapshot");
