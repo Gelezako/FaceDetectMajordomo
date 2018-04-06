@@ -1,5 +1,9 @@
 # FaceDetectMajordomo
-Определение пользователя по датчику движения http://blog.gelezako.com
+Определение пользователя по датчику движения, видео инструкции:
+Часть #1 https://www.youtube.com/watch?v=7k9tDY_ajrY
+Часть #2 https://www.youtube.com/watch?v=rQYZWZetQ6Y
+
+Блог http://blog.gelezako.com
 
 Настройка:
 1. Скачать видео плеер ffmpeg и положить его в папку C:\_majordomo\apps. Необходим что бы делать фото, когда будет зафиксировано движение.
